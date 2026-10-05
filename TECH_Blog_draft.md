@@ -1,6 +1,6 @@
 # Carry trust signals from source to AI
 
-**A lending AI agent that decides when the data is current, and hands the case to a person when it isn't — and how Ataccama & Snowflake makes that possible.**
+**A lending AI agent that decides when the data is current, and hands the case to a person when it isn't — and how Ataccama & Snowflake make that possible.**
 
 > **Draft status:** Snowflake portion only. Sections marked
 > `[ATACCAMA — TO BE WRITTEN]` are placeholders for the Ataccama team.
