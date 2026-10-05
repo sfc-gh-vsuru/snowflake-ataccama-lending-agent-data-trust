@@ -1,0 +1,15 @@
+# Snowflake CLI build artifacts
+streamlit/output/
+
+# Local Streamlit config and secrets (never commit credentials)
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+
+# Source material (content plan, published piece one) -- not part of the repo
+src_info/

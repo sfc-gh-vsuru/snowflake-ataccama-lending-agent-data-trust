@@ -1,0 +1,12 @@
+# Packages for Streamlit in Snowflake, warehouse runtime.
+#
+# Only the Snowflake Anaconda channel is used -- these are all pre-vetted and
+# available without network access. snowflake-snowpark-python is provided by
+# the runtime itself, so it is not listed here.
+name: sf_env
+channels:
+  - snowflake
+dependencies:
+  - streamlit
+  - pandas
+  - altair

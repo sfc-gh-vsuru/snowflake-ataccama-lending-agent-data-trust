@@ -1,0 +1,26 @@
+# Streamlit in Snowflake deployment manifest
+#
+# WAREHOUSE runtime (not the SPCS container runtime). It must be set
+# explicitly: omitting `runtime_name` does NOT select the warehouse runtime --
+# accounts can default to SYSTEM$ST_CONTAINER_RUNTIME_PY3_11, which then fails
+# with "pyproject.toml file does not exist". The warehouse runtime installs
+# from environment.yml using Anaconda packages only, with no external access
+# integration and no network egress.
+#
+# Deploy with:  snow streamlit deploy --replace -c coco_conn
+
+definition_version: 2
+
+entities:
+  lending_trust_audit:
+    type: streamlit
+    identifier:
+      name: LENDING_TRUST_AUDIT
+      database: ATACCAMA_TRUST_DEMO
+      schema: AGENTS
+    query_warehouse: COCOWH
+    runtime_name: SYSTEM$WAREHOUSE_RUNTIME
+    main_file: streamlit_app.py
+    artifacts:
+      - streamlit_app.py
+      - environment.yml
