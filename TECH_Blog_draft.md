@@ -14,7 +14,7 @@
 
 ## TL;DR
 
-- Our [previous blog](https://docs.google.com/document/d/13k-CvMbGVXnnb3Ne_syBoLmQyHt9osNAGz-sIg8VCl0/edit?usp=sharing)
+- Our previous blog
   made a simple point: an AI agent needs to know two things about a number —
   what it *means*, and whether it can be *trusted right now*. This piece shows
   how we built the second part in Snowflake.

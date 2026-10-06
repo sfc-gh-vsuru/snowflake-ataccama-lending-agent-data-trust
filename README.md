@@ -22,7 +22,7 @@ hard to see.
 > **A semantic layer tells an agent what a number means.
 > A trust layer tells it whether the number can be used.**
 
-The [first piece](https://docs.google.com/document/d/13k-CvMbGVXnnb3Ne_syBoLmQyHt9osNAGz-sIg8VCl0/edit?usp=sharing)
+The first piece
 in this series made that argument for a business audience. This repo builds the
 second half for practitioners.
 
